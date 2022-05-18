@@ -89,3 +89,34 @@
 .profile__add {
    margin: auto 0 auto auto;
 }
+
+.places {
+   max-width: 282px;
+   border-radius: 5%;
+   background-color: white;
+   overflow: hidden;
+}
+
+.place__photo {
+   width: 100%;
+
+}
+
+.place__description {
+   height: 79px;
+   display: flex;
+}
+
+.place__name {
+   margin: auto auto 31px 21px;
+   padding: 0;
+   color: #000000;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 29px;
+}
+
+.place__like-button {
+   height: 19px;
+   margin: auto 20px 30px auto;
+}
