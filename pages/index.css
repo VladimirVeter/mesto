@@ -2,14 +2,13 @@
 @import url(../vendor/fonts/fonts.css);
 
 .page {
-   max-width: 1280px;
+   max-width: 880px;
    min-width: 320px;
    background-color: #000000;
    font-family: 'Inter', Arial, sans-serif;
    color: white;
    margin: 0 auto;
    align-items: center;
-   border: 1px solid white;
 }
 
 .header {
@@ -91,14 +90,27 @@
 }
 
 .places {
-   max-width: 282px;
-   border-radius: 5%;
+   display: grid;
+   max-width: 880px;
+   grid-template-columns: repeat(3, auto);
+   grid-template-rows: auto;
+   row-gap: 20px;
+   column-gap: 17px;
+   margin-top: 50px;
+
+}
+
+.place {
+   width: 282px;
+   height: 361px;
+   border-radius: 4%;
    background-color: white;
    overflow: hidden;
 }
 
 .place__photo {
-   width: 100%;
+   width: 282px;
+   height: 282px;
 
 }
 
@@ -118,5 +130,19 @@
 
 .place__like-button {
    height: 19px;
-   margin: auto 20px 30px auto;
+   margin: auto 20px 35px auto;
+}
+
+.footer {
+   padding-top: 66px;;
+
+}
+
+.footer__author {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   color: #545454;
+   margin: 0;
+   padding: 0;
 }
