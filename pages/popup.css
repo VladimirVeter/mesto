@@ -1,0 +1,36 @@
+.popup {
+   position: fixed;
+   top: 0; можно задать выс.шир.
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0, 5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.popup_isOpen {
+   display: flex;
+}
+
+.popup__content {
+   min-width: 430px;
+   min-height: 330px;
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 36px;
+   position: relative;
+}
+
+.popup__close {
+   background: url('../images/'); -крестик
+   background-size: 32px 32px;
+   width: 35px;
+   height: 35px;
+   border: none;
+   position: absolute;
+   top: -35px;
+   right: -35px;
+   cursor: pointer;
+}
