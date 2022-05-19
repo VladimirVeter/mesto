@@ -60,7 +60,7 @@
 }
 
 .profile__description {
-   width: 100%;
+   
 }
 
 .profile__avatar {
@@ -92,7 +92,15 @@
    width: 150px;
    height: 50px;
    padding: auto 0;
-   
+   background-image: url(../images/AddButton.png)
+}
+
+@media screen and (max-width: 660px) {
+   .profile__add {
+      width: 282px;
+      height: 50px;
+      background-image: url(../images/AddButtonBig.png)
+   }
 }
 
 .profile__user-name {
