@@ -32,11 +32,7 @@
    height: 33px;
 }
 
-.decor __line {
-   width: 880px;
-   align-self: flex-end;
-   margin-left: 0;
-}
+
 
 .decor__line {
    background-image: url(../images/Line.png);
@@ -50,18 +46,22 @@
    margin: 40px auto 0;
    max-width: 880px;
    display:flex;
+   flex-direction: row;
    border:1px red solid;
 }
 
 @media screen and (max-width: 660px) {
    .profile {
       margin: 42px auto 0;
-      max-width: 228px;
+      max-width: 282px;
       height: 286px;
       flex-direction: column;
    }
 }
 
+.profile__description {
+   width: 100%;
+}
 
 .profile__avatar {
    border-radius: 50%;
@@ -75,26 +75,28 @@
    }
 }
 
-.profile__description {
-   display: grid;
-   grid-template-columns: 294px 42px;
-   grid-template-rows: max-content max-content;
-   margin-left: 30px;
-   row-gap: 16px;
-   align-content: center;
-   border: 1px white solid;
+.profile__name-edit {
+   display: flex;
+   margin: auto 0 0 30px;
+   
 }
 
-
+@media screen and (max-width: 660px) {
+   .profile__name-edit {
+         margin: 0;
+         width: 100%;
+      }
+}
 
 .profile__add {
    width: 150px;
    height: 50px;
    padding: auto 0;
+   
 }
 
 .profile__user-name {
-   margin: 0;
+   margin: 22px 0 8px 0;
    padding: 0;
    font-weight: 500;
    font-size: 42px;
@@ -105,21 +107,39 @@
    .profile__user-name {
       font-size: 27px;
       line-height: 33px;
-      text-align: center;
-      
+      text-align: cnter;
+      margin: 26px auto 0px 45px;
    }
 }
 
 .profile__annotation {
-   margin: 0;
+   margin: 0 0 0 30px;
    padding: 0;
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
 }
 
+@media screen and (max-width: 660px) {
+   .profile__annotation {
+         font-size: 14px;
+         line-height: 17px;
+         margin: 8px 0 0 62px;
+      }
+   }
+
 .profile__edit {
-   margin:  auto 0 8px auto;
+   width: 24px;
+   height: 24px;
+   margin: 37px 0 0 18px;
+}
+
+@media screen and (max-width: 660px) {
+   .profile__edit {
+      margin: 35px 19px auto 10px;
+      width: 18px;
+      height: 18px;
+   }
 }
 
 .profile__edit:hover {
@@ -128,6 +148,12 @@
 
 .profile__add {
    margin: auto 0 auto auto;
+}
+
+@media screen and (max-width: 660px) {
+   .profile__add {
+      margin: auto auto 0 auto;
+   }
 }
 
 .profile__add:hover {
