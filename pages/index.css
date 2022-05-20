@@ -280,7 +280,7 @@
    bottom: 0;
    right: 0;
    background: rgba(0, 0, 0, 0, 5);
-   display: flex; none откл
+   display: none; none откл
    justify-content: center;
    align-items: center;
 }
@@ -308,4 +308,8 @@
    top: -35px;
    right: -35px;
    cursor: pointer;
+}
+
+.profile__edit-button {
+   background-color: Transparent;
 }
