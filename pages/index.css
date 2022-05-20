@@ -379,7 +379,7 @@ input[type="text"] {
 
 .popup__close {
    background: url('../images/CloseIcon.png');
-   background-size: 33px 33px;
+   background-size: 32px 32px;
    width: 35px;
    height: 35px;
    border: none;
