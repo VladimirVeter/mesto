@@ -8,3 +8,7 @@ console.log(popup)
 editButton.addEventListener('click', function () {
    popup.classList.add('popup_isOpen')
 })
+
+closePopupButton.addEventListener('click', function () {
+   popup.classList.add('popup__close')
+})

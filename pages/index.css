@@ -280,9 +280,41 @@
    bottom: 0;
    right: 0;
    background: rgba(0, 0, 0, 0, 5);
-   display: none; none откл
+   display: none; 
    justify-content: center;
    align-items: center;
+}
+
+.popup__title {
+   margin: 34px 0 0 36px;
+   padding: 0;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 29px;
+   color:#000000;
+}
+
+.popup__form {
+   display: grid;
+   grid-template-columns: calc(100% - 72px);
+   grid-template-rows: 27px 27px auto;
+   justify-content: center;
+   margin-top: 54px;
+   gap: 20px;
+}
+
+.popup__button {
+   height: 50px;
+   max-width: 100%;
+   background-color:#000000;
+   margin-top: 28px;
+   color: white;
+}
+
+input[type="text"] {
+   font-size: 14px;
+   height: 27px;
+   
 }
 
 .popup_isOpen {
@@ -294,12 +326,11 @@
    min-height: 330px;
    background-color: #fff;
    border-radius: 10px;
-   padding: 36px;
    position: relative;
 }
 
 .popup__close {
-   background: url('../images/'); крестик
+   background: url('../images/CloseIcon.png');
    background-size: 32px 32px;
    width: 35px;
    height: 35px;
