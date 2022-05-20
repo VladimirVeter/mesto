@@ -378,7 +378,7 @@ input[type="text"] {
 }
 
 .popup__close {
-   background: url('../images/CloseIcon.png');
+   background: url('../images/CloseIcon.svg');
    background-size: 32px 32px;
    width: 35px;
    height: 35px;
@@ -395,4 +395,7 @@ input[type="text"] {
 
 .profile__edit-button {
    background-color: Transparent;
+   border: none;
+   padding: 0;
 }
+
