@@ -309,12 +309,15 @@
    background-color:#000000;
    margin-top: 28px;
    color: white;
+   font-size: 18px;
+   line-height: 22px;
 }
 
 input[type="text"] {
    font-size: 14px;
    height: 27px;
-   
+   border: 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .popup_isOpen {
