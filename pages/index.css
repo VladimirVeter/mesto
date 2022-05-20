@@ -246,6 +246,10 @@
    margin: auto 20px 35px auto;
 }
 
+.place__like-button:hover {
+   opacity: 0.5;
+}
+
 .footer {
    padding-top: 66px;
 }
@@ -279,7 +283,7 @@
    left: 0;
    bottom: 0;
    right: 0;
-   background: rgba(0, 0, 0, 0, 5);
+   background: rgba(0, 0, 0, 0.5);
    display: none; 
    justify-content: center;
    align-items: center;
@@ -375,7 +379,7 @@ input[type="text"] {
 
 .popup__close {
    background: url('../images/CloseIcon.png');
-   background-size: 32px 32px;
+   background-size: 33px 33px;
    width: 35px;
    height: 35px;
    border: none;
