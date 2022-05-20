@@ -12,3 +12,14 @@ editButton.addEventListener('click', function () {
 closePopupButton.addEventListener('click', function () {
    popup.classList.add('popup__close')
 })
+
+let formElement = document.querySelector('popup__form')
+let nameInput = document.querySelector('popup__input-name')
+let jobInput = document.querySelector('popup__input-annotation')
+
+function formSubmitHandler(evt) {
+   evt.preventDefault();
+
+}
+
+formElement.addEventListener('submit', formSubmitHandler); 
