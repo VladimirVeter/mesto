@@ -1,0 +1,19 @@
+.profile__annotation {
+   max-width: 336px;
+   margin: 0 0 0 30px;
+   padding: 0;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+@media screen and (max-width: 660px) {
+   .profile__annotation {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 8px 0 0 62px;
+   }
+}

@@ -1,0 +1,16 @@
+.popup__form {
+   display: grid;
+   grid-template-columns: calc(100% - 72px);
+   grid-template-rows: 27px 27px auto;
+   justify-content: center;
+   margin-top: 54px;
+   gap: 20px;
+}
+
+@media screen and (max-width: 660px) {
+   .popup__form {
+      grid-template-columns: calc(100% - 44px);
+      margin-top: 75px;
+      gap: 30px;
+   }
+}
