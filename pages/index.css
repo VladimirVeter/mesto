@@ -1,69 +1,25 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo);
+@import url(../blocks/header/__decor-line/header__decor-line.css);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
 
-.page {
-   max-width: 880px;
-   min-width: 320px;
-   background-color: #000000;
-   font-family: 'Inter', Arial, sans-serif;
-   color: white;
-   margin: 0 auto;
-   
-}
-
-@media screen and (max-width: 660px) {
-   .page {
-      max-width: 320px;
-   }
-}
 
 
-.header {
-   max-width: 880px;
-   height: 74px;
-   margin: 45px auto 0;
-   position: relative;
-
-}
-
-@media screen and (max-width: 660px) {
-   .header {
-      max-width: 320px;
-      height: 56px;
-      margin: 28px auto 0;
-   }
-}
-
-.header__logo {
-   width: 142px;
-   height: 33px;
-}
-
-@media screen and (max-width: 660px) {
-   .header__logo {
-      width: 104px;
-      height: 25px;
-      padding-left: 27px;
-   }
-}
-
-.decor__line {
-   background-image: url(../images/Line.png);
-   position: absolute;
-   width: 880px;
-   height: 1px;
-   bottom: 0;
-}
-
-@media screen and (max-width: 660px) {
-   .decor__line {
-      background-image: url(../images/Line.png);
-      position: absolute;
-      width: 320px;
-      height: 1px;
-      bottom: 0;
-   }
-}
 
 .profile {
    margin: 40px auto 0;
