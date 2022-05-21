@@ -1,6 +1,7 @@
 const editButton = document.querySelector('.profile__edit-button')
 const popup = document.querySelector('.popup')
 const closePopupButton = document.querySelector('.popup__close')
+const saveButton = document.querySelector('.popup__button')
 
 const titleElement = document.querySelector('.profile__user-name')
 const nameFieldElement = document.querySelector('.popup__input-name')
@@ -19,12 +20,14 @@ editButton.addEventListener('click', function() {
 
 closePopupButton.addEventListener('click', function() {
    popup.classList.remove('popup_isOpen')
+   
+})
+
+saveButton.addEventListener('click', function () {
+   popup.classList.remove('popup_isOpen')
    titleElement.textContent = nameFieldElement.value;
    annotationElement.textContent = annotationFieldElement.value;
 })
-
-
-
 
 
 
