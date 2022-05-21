@@ -47,7 +47,7 @@
    }
 }
 
-.decor__line {
+.header__decor-line {
    background-image: url(../images/Line.png);
    position: absolute;
    width: 880px;
@@ -56,7 +56,7 @@
 }
 
 @media screen and (max-width: 660px) {
-   .decor__line {
+   .header__decor-line {
       background-image: url(../images/Line.png);
       position: absolute;
       width: 320px;
@@ -108,18 +108,23 @@
 }
 
 .profile__add {
+   margin: auto 0 auto auto;
    width: 150px;
    height: 50px;
-   padding: auto 0;
    background-image: url(../images/AddButton.png)
 }
 
 @media screen and (max-width: 660px) {
    .profile__add {
+      margin: auto auto 0 auto;
       width: 282px;
       height: 50px;
       background-image: url(../images/AddButtonBig.png)
    }
+}
+
+.profile__add:hover {
+   opacity: 0.6;
 }
 
 .profile__user-name {
@@ -166,7 +171,7 @@
 .profile__edit {
    width: 24px;
    height: 24px;
-   margin: 37px 0 0 18px;
+   margin: 30px 0 0 18px;
 }
 
 @media screen and (max-width: 660px) {
@@ -181,19 +186,6 @@
    opacity: 0.6;
 }
 
-.profile__add {
-   margin: auto 0 auto auto;
-}
-
-@media screen and (max-width: 660px) {
-   .profile__add {
-      margin: auto auto 0 auto;
-   }
-}
-
-.profile__add:hover {
-   opacity: 0.6;
-}
 
 .elements {
    margin: 0 auto;
