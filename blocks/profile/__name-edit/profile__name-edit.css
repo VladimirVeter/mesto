@@ -1,7 +1,6 @@
 .profile__name-edit {
    display: flex;
    margin: auto 0 0 30px;
-
 }
 
 @media screen and (max-width: 660px) {
