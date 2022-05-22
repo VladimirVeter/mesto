@@ -15,11 +15,11 @@
 **Figma**
 
 * [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
-* В макете в «Фигме» показан дизайн страницы для ширины в 320, 768, 1024 и 1280 пикселей. 
+* В макете в «Фигме» показан дизайн страницы для ширины в 320 пикселей и выше. 
 * Тексты написаны бесплатным шрифтом ”Inter“ от дизайнеров «Фигмы».
 
 **Ссылка на проект**
 
-https://vladimirveter.github.io/russian-travel/index.html
+https://vladimirveter.github.io/mesto/
 
 *Владимир.*
