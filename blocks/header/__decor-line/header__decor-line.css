@@ -1,17 +1,14 @@
 .header__decor-line {
-   background-image: url(../../../images/Line.png);
    position: absolute;
    width: 880px;
-   height: 1px;
+   border: 1px solid #545454;
    bottom: 0;
 }
 
 @media screen and (max-width: 660px) {
    .header__decor-line {
-      background-image: url(../../../images/Line.png);
       position: absolute;
       width: 320px;
-      height: 1px;
       bottom: 0;
    }
 }
