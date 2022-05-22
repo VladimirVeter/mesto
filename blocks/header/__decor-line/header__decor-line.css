@@ -1,6 +1,6 @@
 .header__decor-line {
    position: absolute;
-   width: 880px;
+   width: 100%;
    border: 1px solid #545454;
    bottom: 0;
 }
