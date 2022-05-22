@@ -14,7 +14,7 @@
 
 **Figma**
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
+* [Ссылка на макет в Figma]([https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1))
 * В макете в «Фигме» показан дизайн страницы для ширины в 320, 768, 1024 и 1280 пикселей. 
 * Тексты написаны бесплатным шрифтом ”Inter“ от дизайнеров «Фигмы».
 
