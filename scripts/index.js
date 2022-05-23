@@ -13,18 +13,18 @@ const annotationFieldElement = document.querySelector('.popup__input-annotation'
 //console.log(popup)
 
 editButton.addEventListener('click', function() {
-   popup.classList.add('popup__is-open')
+   popup.classList.add('popup_is-open')
    nameFieldElement.value = titleElement.textContent;
    annotationFieldElement.value = annotationElement.textContent;
 })
 
 closePopupButton.addEventListener('click', function() {
-   popup.classList.remove('popup__is-open')
+   popup.classList.remove('popup_is-open')
    
 })
 
 saveButton.addEventListener('click', function () {
-   popup.classList.remove('popup__is-open')
+   popup.classList.remove('popup_is-open')
    titleElement.textContent = nameFieldElement.value;
    annotationElement.textContent = annotationFieldElement.value;
 })
