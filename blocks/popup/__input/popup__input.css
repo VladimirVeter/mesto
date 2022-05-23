@@ -1,4 +1,4 @@
-input[type="text"] {
+.popup__input {
    font-size: 14px;
    height: 27px;
    border: 0;
