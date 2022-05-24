@@ -1,4 +1,20 @@
 .elements {
-   margin: 0 auto;
-   align-items: center;
+   display: grid;
+   max-width: 880px;
+   grid-template-columns: repeat(auto-fit, 282px);
+   grid-template-rows: auto;
+   row-gap: 20px;
+   column-gap: 17px;
+   margin: 50px auto 0 auto;
+   justify-content: center;
+}
+
+@media screen and (max-width: 660px) {
+   .elements {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      margin: 36px auto 0 auto;
+      align-items: center;
+   }
 }
