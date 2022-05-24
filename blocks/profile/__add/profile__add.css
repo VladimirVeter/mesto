@@ -3,6 +3,8 @@
    height: 50px;
    padding: 0;
    margin: auto 0 auto auto;
+   background-color: transparent;
+   border: none;
    background-image: url(../../../images/AddButton.png);
 }
 
