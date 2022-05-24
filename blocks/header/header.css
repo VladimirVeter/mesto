@@ -2,12 +2,27 @@
    max-width: 880px;
    margin: 45px auto 0;
    position: relative;
-
+   display: flex;
 }
+
+.header::after {
+   position: absolute;
+   width: 100%;
+   border: 1px solid #545454;
+   bottom: 0;
+   content: '';
+   }
 
 @media screen and (max-width: 660px) {
    .header {
       max-width: 320px;
       margin: 28px auto 0;
+   }
+}
+
+@media screen and (max-width: 660px) {
+.header:after {
+   width: 320px;
+   bottom: 0;
    }
 }
