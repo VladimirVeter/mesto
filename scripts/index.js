@@ -27,13 +27,13 @@ function removeNewClass() {                                                     
 
 saveButton.addEventListener('click', removeNewClass)                                // Нажми на saveButton, получи одну команду: removeNewClass
 
-saveButton.addEventListener('click', function () {                                   // Нажми на saveButton, получи две команды:
+saveButton.addEventListener('click', function () {                                  // Нажми на saveButton, получи две команды:
    userName.textContent = newUserName.value;                                        // Значение userName на главной = значению newUserName на попап
    userAnnotation.textContent = newUserAnnotation.value;                            // Значение userAnnotation на главной = значению newUserAnnotation на попап
 })
 
 
-const formElement = document.querySelector('.popup__form')                            // formElement в JS равен стилю .popup__form в CSS
+const formElement = document.querySelector('.popup__form')                          // formElement в JS равен стилю .popup__form в CSS
 
 
 function formSubmitHandler(evt) {                                                   // function имяФункции() { тело функции };
