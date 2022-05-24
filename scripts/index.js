@@ -9,6 +9,8 @@ const newUserName = document.querySelector('.popup__input-name')                
 const userAnnotation = document.querySelector('.profile__annotation')               // Описание юзера на главной
 const newUserAnnotation = document.querySelector('.popup__input-annotation')        // Новое описание юзера на попап
 
+const formElement = document.querySelector('.popup__form')                          // formElement в JS равен стилю .popup__form в CSS
+
 
 editButton.addEventListener('click', addNewClass)                                   // Нажми на editButton, получи одну команду:
 function addNewClass() {                                                            // запуск функции addNewClass
@@ -33,7 +35,7 @@ saveButton.addEventListener('click', function () {                              
 })
 
 
-const formElement = document.querySelector('.popup__form')                          // formElement в JS равен стилю .popup__form в CSS
+
 
 
 function formSubmitHandler(evt) {                                                   // function имяФункции() { тело функции };
