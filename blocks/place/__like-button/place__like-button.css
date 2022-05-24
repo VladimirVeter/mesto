@@ -4,6 +4,7 @@
    margin: auto 20px 35px auto;
    background-color: transparent;
    border: none;
+   cursor: pointer;
 }
 
 .place__like-button:hover {
