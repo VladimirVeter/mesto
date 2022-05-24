@@ -12,20 +12,24 @@ const newUserAnnotation = document.querySelector('.popup__input-annotation')    
 const formElement = document.querySelector('.popup__form')                          // formElement в JS равен стилю .popup__form в CSS
 
 
-editButton.addEventListener('click', addNewClass)                                   // Нажми на editButton, получи одну команду:
+
 function addNewClass() {                                                            // запуск функции addNewClass
    popup.classList.add('popup_is-open')                                             // функция содержит добавление класса .popup_is-open
 }
+editButton.addEventListener('click', addNewClass)                                   // Нажми на editButton, получи одну команду:
+
 
 editButton.addEventListener('click', function () {                                  // Нажми на editButton, получи две команды:
    newUserName.value = userName.textContent;                                        // Значение из поля ввода newUserName = Значению userName 
    newUserAnnotation.value = userAnnotation.textContent;                            // Значение из поля ввода newUserAnnotation = Значению userAnnotation
 })
 
-closePopupButton.addEventListener('click', removeNewClass)                          // Нажми на closePopupButton, получи одну команду:
+
 function removeNewClass() {                                                         // запуск функции removeNewClass
    popup.classList.remove('popup_is-open')                                          // функция содержит удаление класса .popup_is-open
 }
+closePopupButton.addEventListener('click', removeNewClass)                          // Нажми на closePopupButton, получи одну команду:
+
 
 saveButton.addEventListener('click', removeNewClass)                                // Нажми на saveButton, получи одну команду: removeNewClass
 
