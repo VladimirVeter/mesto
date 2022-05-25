@@ -1,3 +1,6 @@
+// удалю
+
+
 const editButton = document.querySelector('.profile__edit-button')                  // вызов попап           (editButton в JS равен стилю .profile__edit-button в CSS)
 const popup = document.querySelector('.popup')                                      // форма попап           (popup в JS равен стилю .popup в CSS)
 const closePopupButton = document.querySelector('.popup__close')                    // крестик Закрыть попап (closePopupButton в JS равен стилю .popup__close в CSS)
