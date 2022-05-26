@@ -4,7 +4,7 @@
    margin: 37px 0 0 18px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 720px) {
    .profile__edit {
       margin: 35px 19px auto 10px;
       width: 18px;
