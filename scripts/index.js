@@ -26,6 +26,6 @@ function formSubmitHandler(evt) {
    evt.preventDefault();
    userName.textContent = newUserName.value;
    userAnnotation.textContent = newUserAnnotation.value;
-   popup.classList.remove('popup_is-open');
+   removeNewClass();
 }
 formElement.addEventListener('submit', formSubmitHandler);
