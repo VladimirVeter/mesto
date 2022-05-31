@@ -10,6 +10,7 @@ const newUserAnnotation = document.querySelector('.popup__input_user_annotation'
 
 const formElement = document.querySelector('.popup__form')
 
+
 function addNewClass() {                                                   // открыли попап
    popup.classList.add('popup_is-open');
    newUserName.value = userName.textContent;
