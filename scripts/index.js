@@ -15,12 +15,12 @@ const newUserAnnotation = document.querySelector('.popup__input_user_annotation'
 const formElement = document.querySelector('.popup__form')
 
 
-function addNewPlace() {                                                   // открыли попап
+function addNewPlace() {                                                   // открыли попап Place
    popupPlace.classList.add('popup_is-open');
    }
 buttonNewPlace.addEventListener('click', addNewPlace)
 
-function addNewClass() {                                                   // открыли попап
+function addNewClass() {                                                   // открыли попап User
    popupUser.classList.add('popup_is-open');
    newUserName.value = userName.textContent;
    newUserAnnotation.value = userAnnotation.textContent;
@@ -29,17 +29,17 @@ editButton.addEventListener('click', addNewClass)
 
 
 
-function removeNewClass() {                                                // закрыли попап
+function removeNewClass() {                                                // закрыли попап User
    popupUser.classList.remove('popup_is-open');
 }
 closePopupButton.addEventListener('click', removeNewClass)
 
-function popupPlaceClose() {                                                // закрыли попап
+function popupPlaceClose() {                                                // закрыли попап Place
    popupPlace.classList.remove('popup_is-open');
 }
 closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
-function formSubmitHandler(evt) {
+function formSubmitHandler(evt) {                                           // редактирование полей User
    evt.preventDefault();
    userName.textContent = newUserName.value;
    userAnnotation.textContent = newUserAnnotation.value;
