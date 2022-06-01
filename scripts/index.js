@@ -4,6 +4,7 @@ const closePopupButton = document.querySelector('.popup__close')
 
 const popupPlace = document.querySelector('.popup_place')
 const buttonNewPlace = document.querySelector('.profile__add')
+const closePopupButtonPlace = document.querySelector('.popup__close_place')
 
 const userName = document.querySelector('.profile__user-name')
 const userAnnotation = document.querySelector('.profile__annotation')
@@ -32,6 +33,11 @@ function removeNewClass() {                                                // з
    popupUser.classList.remove('popup_is-open');
 }
 closePopupButton.addEventListener('click', removeNewClass)
+
+function popupPlaceClose() {                                                // закрыли попап
+   popupPlace.classList.remove('popup_is-open');
+}
+closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
 function formSubmitHandler(evt) {
    evt.preventDefault();
