@@ -1,5 +1,5 @@
 const editButton = document.querySelector('.profile__edit-button')
-const popup = document.querySelector('.popup')
+const popupUser = document.querySelector('.popup')
 const closePopupButton = document.querySelector('.popup__close')
 
 const userName = document.querySelector('.profile__user-name')
@@ -12,14 +12,14 @@ const formElement = document.querySelector('.popup__form')
 
 
 function addNewClass() {                                                   // открыли попап
-   popup.classList.add('popup_is-open');
+   popupUser.classList.add('popup_is-open');
    newUserName.value = userName.textContent;
    newUserAnnotation.value = userAnnotation.textContent;
 }
 editButton.addEventListener('click', addNewClass)
 
 function removeNewClass() {                                                // закрыли попап
-   popup.classList.remove('popup_is-open');
+   popupUser.classList.remove('popup_is-open');
 }
 closePopupButton.addEventListener('click', removeNewClass)
 
