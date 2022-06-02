@@ -41,14 +41,19 @@ const newUserAnnotation = document.querySelector('.popup__input_user_annotation'
 
 const formElement = document.querySelector('.popup__form')
 
-function addNewPlace(link, name) {
-   const placeTemplate = document.querySelector('.places').content;
+const newPlaceElement = document.querySelector('.places')
+
+function addNewPlaceCard(link, name) {
+   const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
 
-   placeElement.querySelector('.place__photo').textContent = link;
+   placeElement.querySelector('.place__photo').src = link;
    placeElement.querySelector('.place__name').textContent = name;
-   
+
+   newPlaceElement.prepend(placeElement);
 }
+
+initialCards.forEach(addNewPlaceCard);
 
 function addNewPlace() {                                                   // открыли попап Place
    popupPlace.classList.add('popup_is-open');
