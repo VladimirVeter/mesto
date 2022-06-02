@@ -1,4 +1,5 @@
 .place {
+   position: relative;
    width: 282px;
    height: 361px;
    border-radius: 4%;
