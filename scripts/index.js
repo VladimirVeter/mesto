@@ -41,7 +41,7 @@ const newUserAnnotation = document.querySelector('.popup__input_user_annotation'
 
 const formElement = document.querySelector('.popup__form')
 
-const newPlaceElement = document.querySelector('.places')
+const newPlaceElement = document.querySelector('.elements')
 
 function addNewPlaceCard(link, name) {
    const placeTemplate = document.querySelector('#place__card').content;
