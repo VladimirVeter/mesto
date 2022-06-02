@@ -43,12 +43,12 @@ const formElement = document.querySelector('.popup__form')
 
 const newPlaceElement = document.querySelector('.elements')
 
-function addNewPlaceCard(link, name) {
+function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
 
-   placeElement.querySelector('.place__photo').src = link;
-   placeElement.querySelector('.place__name').textContent = name;
+   placeElement.querySelector('.place__name').textContent = item.name;
+   placeElement.querySelector('.place__photo').src = item.link;
 
    newPlaceElement.prepend(placeElement);
 }
