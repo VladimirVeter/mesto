@@ -46,7 +46,7 @@ const newPlaceElement = document.querySelector('.elements')
 
 const buttonTrash = document.querySelector('.place__delete-button')
 
-
+const LikeButton = document.querySelector('.place__like-button')
 
 
 
@@ -94,8 +94,13 @@ function formSubmitHandler(evt) {                                           // Ñ
 }
 formElement.addEventListener('submit', formSubmitHandler);
 
-function deletePlaceCard() {
-   const place = document.querySelector('.place');
-   place.remove();
+//function deletePlaceCard() {
+//   const place = document.querySelector('.place');
+//   place.remove();
+//}
+//buttonTrash.addEventListener('clik', deletePlaceCard)
+
+function addLike() {                                                   // like
+   LikeButton.classList.add('place__like-button-active');
 }
-buttonTrash.addEventListener('clik', deletePlaceCard)
+LikeButton.addEventListener('click', addLike);
