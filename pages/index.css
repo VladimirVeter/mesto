@@ -19,7 +19,7 @@
 @import url(../blocks/place/__like-button/place__like-button.css);
 @import url(../blocks/place/__delete-button/place__delete-button.css);
 @import url(../blocks/place/__name/_zoom/place__name_zoom.css);
-@import url(../blocks/place/__photo/_zoom/place__photo_zoom.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/popup/popup.css);
@@ -33,6 +33,8 @@
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__close/_place/popup__close_place.css);
 @import url(../blocks/popup/__zoom/popup__zoom.css);
+@import url(../blocks/popup/__zoom/_photo/popup__zoom_photo.css);
+
 
 
 
