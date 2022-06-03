@@ -1,0 +1,5 @@
+.place__photo_zoom {
+   max-height: 75vh;
+   max-width: 75vw;
+   background-image: url(../../../../images/Karachaevsk.jpg);
+}
