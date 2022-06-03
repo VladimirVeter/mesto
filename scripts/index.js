@@ -44,6 +44,12 @@ const formElement = document.querySelector('.popup__form')
 
 const newPlaceElement = document.querySelector('.elements')
 
+const buttonTrash = document.querySelector('.place__delete-button')
+
+
+
+
+
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
@@ -87,3 +93,9 @@ function formSubmitHandler(evt) {                                           // Ñ
    removeNewClass();
 }
 formElement.addEventListener('submit', formSubmitHandler);
+
+function deletePlaceCard() {
+   const place = document.querySelector('.place');
+   place.remove();
+}
+buttonTrash.addEventListener('clik', deletePlaceCard)
