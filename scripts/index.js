@@ -64,7 +64,8 @@ function addNewPlaceCard(item) {
 
    placeElement.querySelector('.place__delete-button').addEventListener('clik', evt => {
       const placeElement = evt.currentTarget.parentElement;
-       placeElement.remove();
+      placeElement.remove();
+      
    });
 
    newPlaceElement.prepend(placeElement);
