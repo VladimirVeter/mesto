@@ -62,7 +62,7 @@ function addNewPlaceCard(item) {
    });
 
 
-   placeElement.querySelector('.place__delete-button').addEventListener('clik', evt => {
+   placeElement.querySelector('.place__delete-button').addEventListener('click', evt => {
       const placeElement = evt.currentTarget.parentElement;
       placeElement.remove();
       
@@ -105,9 +105,5 @@ function formSubmitHandler(evt) {                                           // Ñ
 }
 formElement.addEventListener('submit', formSubmitHandler);
 
-//function deletePlaceCard() {
-//   const place = document.querySelector('.place');
-//   place.remove();
-//}
-//buttonTrash.addEventListener('clik', deletePlaceCard)
+
 
