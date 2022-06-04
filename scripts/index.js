@@ -57,6 +57,15 @@ function addNewPlaceCard(item) {
    placeElement.querySelector('.place__name').textContent = item.name;
    placeElement.querySelector('.place__photo').src = item.link;
 
+   placeElement.querySelector('.place__like-button').addEventListener('click', function (evt) {
+      evt.target.classList.toggle('place__like-button-active');
+   });
+
+   placeElement.querySelector('.place__delete-button').addEventListener('clik', evt => {
+      const placeElement = evt.currentTarget.parentElement;
+      placeElement.remove();
+   });
+
    newPlaceElement.prepend(placeElement);
 }
 
@@ -99,6 +108,10 @@ formElement.addEventListener('submit', formSubmitHandler);
 //   place.remove();
 //}
 //buttonTrash.addEventListener('clik', deletePlaceCard)
+
+
+
+
 
 function addLike() {                                                   // like
    LikeButton.classList.add('place__like-button-active');
