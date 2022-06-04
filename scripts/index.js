@@ -61,9 +61,10 @@ function addNewPlaceCard(item) {
       evt.target.classList.toggle('place__like-button-active');
    });
 
+
    placeElement.querySelector('.place__delete-button').addEventListener('clik', evt => {
       const placeElement = evt.currentTarget.parentElement;
-      placeElement.remove();
+       placeElement.remove();
    });
 
    newPlaceElement.prepend(placeElement);
@@ -109,11 +110,3 @@ formElement.addEventListener('submit', formSubmitHandler);
 //}
 //buttonTrash.addEventListener('clik', deletePlaceCard)
 
-
-
-
-
-function addLike() {                                                   // like
-   LikeButton.classList.add('place__like-button-active');
-}
-LikeButton.addEventListener('click', addLike);
