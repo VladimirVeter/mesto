@@ -48,7 +48,8 @@ const buttonTrash = document.querySelector('.place__delete-button')
 
 const LikeButton = document.querySelector('.place__like-button')
 
-
+const newPlaceName = document.querySelector('.popup__input_place_name')
+const newPlaceLink = document.querySelector('.popup__input_place_link')
 
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
@@ -70,6 +71,15 @@ function addNewPlaceCard(item) {
 
    newPlaceElement.prepend(placeElement);
 }
+
+const handlerPlaceInputs = evt => {
+   evt.preventDefault();
+   const name = newPlaceName.value;
+   const link = newPlaceLink.value;
+   addNewPlaceCard(item);
+}
+
+
 
 initialCards.forEach(addNewPlaceCard);
 
