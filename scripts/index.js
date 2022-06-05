@@ -82,9 +82,6 @@ function handlerPlaceInputs(evt) {                      // редактиров�
       name: newPlaceName.value,
       link: newPlaceLink.value,
    }
-
-   // newPlaceName.value = item.name;               // newPlaceName.value = placeElement.textContent;
-   // newPlaceLink.value = item.link;               // newPlaceLink.value = placeElement.src;
    
    addNewPlaceCard(item);
    formPlaceElement.reset();
