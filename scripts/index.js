@@ -74,6 +74,11 @@ function addNewPlaceCard(item) {
       
    });
 
+   
+   placeElement.addEventListener('click', function (evt) {
+      console.log(evt.currentTarget);
+   });
+
    newPlaceElement.prepend(placeElement);
 }
 
@@ -130,12 +135,7 @@ closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
 
 
-const placePhoto = document.querySelector('.place__photo')
 
-
-placePhoto.addEventListener('click', function (evt) {
-      console.log(evt.currentTarget);
-});
    
 
 
