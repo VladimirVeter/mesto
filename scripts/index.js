@@ -52,7 +52,7 @@ const LikeButton = document.querySelector('.place__like-button')
 const newPlaceName = document.querySelector('.popup__input_place_name')
 const newPlaceLink = document.querySelector('.popup__input_place_link')
 
-
+const zoomPopupToggle = document.querySelector('.popup_zoom')
 
 
 
@@ -73,11 +73,12 @@ function addNewPlaceCard(item) {
       placeElement.remove();
    });
 
-      placeElement.addEventListener('click', function (evt) {
+   placeElement.addEventListener('click', function (evt) {
       console.log(evt.currentTarget);
+      zoomPopupToggle.classList.add('popup_is-open'); // здесь
    });
 
-   
+
    newPlaceElement.prepend(placeElement);
 }
 
