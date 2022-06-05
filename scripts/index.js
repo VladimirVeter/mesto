@@ -52,6 +52,7 @@ const LikeButton = document.querySelector('.place__like-button')
 const newPlaceName = document.querySelector('.popup__input_place_name')
 const newPlaceLink = document.querySelector('.popup__input_place_link')
 
+
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
@@ -74,6 +75,24 @@ function addNewPlaceCard(item) {
 }
 
 
+function handlerPlaceInputs(evt) {                      // редактирование полей Place 
+   evt.preventDefault();
+   
+   const item = {
+      name: newPlaceName.value,
+      link: newPlaceLink.value,
+   }
+
+   // newPlaceName.value = item.name;               // newPlaceName.value = placeElement.textContent;
+   // newPlaceLink.value = item.link;               // newPlaceLink.value = placeElement.src;
+   
+   addNewPlaceCard(item);
+   popupPlaceClose();
+}
+formPlaceElement.addEventListener('submit', handlerPlaceInputs);
+
+
+
 function formSubmitHandler(evt) {                             // редактирование полей User рабочий
    evt.preventDefault();
    userName.textContent = newUserName.value;
@@ -81,17 +100,6 @@ function formSubmitHandler(evt) {                             // редакти�
    removeNewClass();
 }
 formElement.addEventListener('submit', formSubmitHandler);
-
-
-function handlerPlaceInputs(evt) {                            // редактирование полей Place нерабочий
-   evt.preventDefault();
-   const item = newPlaceName.value;
-
-   addNewPlaceCard(item);
-   popupPlaceClose();
-}
-formPlaceElement.addEventListener('submit', handlerPlaceInputs);
-
 
 initialCards.forEach(addNewPlaceCard);
 
