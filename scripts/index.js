@@ -87,6 +87,7 @@ function handlerPlaceInputs(evt) {                      // редактиров�
    // newPlaceLink.value = item.link;               // newPlaceLink.value = placeElement.src;
    
    addNewPlaceCard(item);
+   formPlaceElement.reset();
    popupPlaceClose();
 }
 formPlaceElement.addEventListener('submit', handlerPlaceInputs);
