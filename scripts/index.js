@@ -41,6 +41,7 @@ const newUserName = document.querySelector('.popup__input_user_name')
 const newUserAnnotation = document.querySelector('.popup__input_user_annotation')
 
 const formElement = document.querySelector('.popup__form')
+const formPlaceElement = document.querySelector('.popup__form_place')
 
 const newPlaceElement = document.querySelector('.elements')
 
@@ -72,13 +73,23 @@ function addNewPlaceCard(item) {
    newPlaceElement.prepend(placeElement);
 }
 
-const handlerPlaceInputs = evt => {
+
+function formSubmitHandler(evt) {                             // редактирование полей User рабочий
    evt.preventDefault();
-   const name = newPlaceName.value;
-   const link = newPlaceLink.value;
+   userName.textContent = newUserName.value;
+   userAnnotation.textContent = newUserAnnotation.value;
+   removeNewClass();
+}
+formElement.addEventListener('submit', formSubmitHandler);
+
+
+function handlerPlaceInputs(evt) {                            // редактирование полей Place нерабочий
+   evt.preventDefault();
+   const item = newPlaceName.value;
+
    addNewPlaceCard(item);
 }
-
+formPlaceElement.addEventListener('submit', handlerPlaceInputs);
 
 
 initialCards.forEach(addNewPlaceCard);
@@ -107,13 +118,7 @@ function popupPlaceClose() {                                                // �
 }
 closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
-function formSubmitHandler(evt) {                                           // редактирование полей User
-   evt.preventDefault();
-   userName.textContent = newUserName.value;
-   userAnnotation.textContent = newUserAnnotation.value;
-   removeNewClass();
-}
-formElement.addEventListener('submit', formSubmitHandler);
+
 
 
 
