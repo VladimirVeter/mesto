@@ -53,6 +53,9 @@ const newPlaceName = document.querySelector('.popup__input_place_name')
 const newPlaceLink = document.querySelector('.popup__input_place_link')
 
 
+
+
+
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
@@ -127,5 +130,12 @@ closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
 
 
+const placePhoto = document.querySelector('.place__photo')
+
+
+placePhoto.addEventListener('click', function (evt) {
+      console.log(evt.currentTarget);
+});
+   
 
 
