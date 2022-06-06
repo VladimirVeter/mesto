@@ -73,14 +73,16 @@ function addNewPlaceCard(item) {
    });
 
 
+
+   
    placeElement.addEventListener('click', function (evt) {
       console.log(evt.currentTarget);
       imgZoom(item.name, item.link);
       console.log(item);
-      popupUser.classList.add('popup_is-open');
+      
    });
 
-   function imgZoom(name, link) {                                                   // открыли попап Zoom
+   function imgZoom(item, e) {                                                   // открыли попап Zoom
       zoomPhotoName.textContent = item.name;
       zoomBigPhoto.src = item.link;
    }

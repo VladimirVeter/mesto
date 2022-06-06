@@ -3,4 +3,5 @@
    height: 282px;
    top: 0;
    background-position: top;
+   object-fit: cover;
 }
