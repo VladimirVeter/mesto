@@ -53,6 +53,9 @@ const newPlaceName = document.querySelector('.popup__input_place_name')
 const newPlaceLink = document.querySelector('.popup__input_place_link')
 
 
+const zoomPopup = document.querySelector('.popup_zoom')
+const zoomBigPhoto = document.querySelector('.popup__zoom_photo')
+const zoomPhotoName = document.querySelector('.place__name_zoom')
 
 
 function addNewPlaceCard(item) {
@@ -66,33 +69,28 @@ function addNewPlaceCard(item) {
       evt.target.classList.toggle('place__like-button-active');
    });
 
-
    placeElement.querySelector('.place__delete-button').addEventListener('click', evt => {
       const placeElement = evt.currentTarget.parentElement;
       placeElement.remove();
    });
 
-
-
-   
    placeElement.addEventListener('click', function (evt) {
-      console.log(evt.currentTarget);
-      imgZoom(item.name, item.link);
-      console.log(item);
-      
+      imgZoom(item);
+      console.log(item);                  // кликаю на картинку и вызываю консоль с item этой картинки
    });
 
-   function imgZoom(item, e) {                                                   // открыли попап Zoom
+   function imgZoom(item) {
+      zoomPopup.classList.add('popup_is-open');  // открыли попап Zoom
+      console.log(zoomPopup.classList)           // проверяю присвоение класса popup_is-open
+      debugger;
       zoomPhotoName.textContent = item.name;
       zoomBigPhoto.src = item.link;
-   }
-   
+   };
+
    newPlaceElement.prepend(placeElement);
 }
 
-const zoomPopup = document.querySelector('.popup_zoom')
-const zoomBigPhoto = document.querySelector('.popup__zoom_photo')
-const zoomPhotoName = document.querySelector('.place__name_zoom')
+
 
 function handlerPlaceInputs(evt) {                      // редактирование полей Place 
    evt.preventDefault();
