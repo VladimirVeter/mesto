@@ -84,8 +84,9 @@ function addNewPlaceCard(item) {
       console.log(zoomPopup.classList)           // проверяю присвоение класса popup_is-open
       zoomPhotoName.textContent = item.name;
       zoomBigPhoto.src = item.link;
+      
    };
-
+   
    newPlaceElement.prepend(placeElement);
 }
 
@@ -141,6 +142,10 @@ function popupPlaceClose() {                                                // �
 }
 closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
+function popupZoomClose() {                                                // закрыли попап User
+   zoomPopup.classList.remove('popup_is-open');
+}
+closePopupButton.addEventListener('click', popupZoomClose)
 
 
 
