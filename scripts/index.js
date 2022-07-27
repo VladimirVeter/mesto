@@ -82,7 +82,6 @@ function addNewPlaceCard(item) {
    function imgZoom(item) {
       zoomPopup.classList.add('popup_is-open');  // открыли попап Zoom
       console.log(zoomPopup.classList)           // проверяю присвоение класса popup_is-open
-      debugger;
       zoomPhotoName.textContent = item.name;
       zoomBigPhoto.src = item.link;
    };
