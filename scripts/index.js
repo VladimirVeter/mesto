@@ -61,6 +61,7 @@ const closeZoomPopupButton = document.querySelector('.popup__close_zoom')
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
+   const ElementPhoto = placeElement.querySelector('.place__photo');
 
    placeElement.querySelector('.place__name').textContent = item.name;
    placeElement.querySelector('.place__photo').src = item.link;
@@ -74,7 +75,7 @@ function addNewPlaceCard(item) {
       placeElement.remove();
    });
 
-   placeElement.addEventListener('click', function (evt) {
+   ElementPhoto.addEventListener('click', function (evt) {
       imgZoom(item);
       console.log(item);                  // кликаю на картинку и вызываю консоль с item этой картинки
    });
