@@ -36,6 +36,7 @@
 @import url(../blocks/popup/__zoom/_photo/popup__zoom_photo.css);
 @import url(../blocks/popup/__close/_zoom/popup__close_zoom.css);
 @import url(../blocks/popup/_is-open/popup_is-open.css);
+@import url(../blocks/popup/__zoom-content/popup__zoom-content.css);
 
 
 
