@@ -56,7 +56,7 @@ const newPlaceLink = document.querySelector('.popup__input_place_link')
 const zoomPopup = document.querySelector('.popup_zoom')
 const zoomBigPhoto = document.querySelector('.popup__zoom_photo')
 const zoomPhotoName = document.querySelector('.place__name_zoom')
-
+const closeZoomPopupButton = document.querySelector('.popup__close_zoom')
 
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
@@ -142,10 +142,11 @@ function popupPlaceClose() {                                                // �
 }
 closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
-function popupZoomClose() {                                                // закрыли попап User
+ 
+function popupZoomClose() {                                                // закрыли попап Zoom
    zoomPopup.classList.remove('popup_is-open');
 }
-closePopupButton.addEventListener('click', popupZoomClose)
+closeZoomPopupButton.addEventListener('click', popupZoomClose)
 
 
 
