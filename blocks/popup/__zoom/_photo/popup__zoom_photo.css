@@ -1,7 +1,6 @@
 .popup__zoom_photo {
-   position: absolute;
+   
    object-fit: none;
-   height: 75vh;
-   width: 75vw;
-   backgroud-image: url(../../../../images/Karachaevsk.jpg);
+   
+   
 }
