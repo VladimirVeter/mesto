@@ -40,7 +40,7 @@ const userAnnotation = document.querySelector('.profile__annotation')
 const newUserName = document.querySelector('.popup__input_user_name')
 const newUserAnnotation = document.querySelector('.popup__input_user_annotation')
 
-const formElement = document.querySelector('.popup__form')
+const formElement = document.querySelector('#profile-form')
 const formPlaceElement = document.querySelector('.popup__form_place')
 
 const newPlaceElement = document.querySelector('.elements')
