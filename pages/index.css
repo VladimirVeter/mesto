@@ -19,7 +19,7 @@
 @import url(../blocks/place/__like-button/place__like-button.css);
 @import url(../blocks/place/__like-button/-active/place__like-button-active.css);
 @import url(../blocks/place/__delete-button/place__delete-button.css);
-@import url(../blocks/place/__name/_zoom/place__name_zoom.css);
+@import url(../blocks/place/__name-zoom/place__name-zoom.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/popup/popup.css);

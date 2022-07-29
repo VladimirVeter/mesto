@@ -55,7 +55,7 @@ const newPlaceLink = document.querySelector('.popup__input_place_link')
 
 const zoomPopup = document.querySelector('.popup_zoom')
 const zoomBigPhoto = document.querySelector('.popup__zoom-photo')
-const zoomPhotoName = document.querySelector('.place__name_zoom')
+const zoomPhotoName = document.querySelector('.place__name-zoom')
 const closeZoomPopupButton = document.querySelector('.popup__close_zoom')
 
 function addNewPlaceCard(item) {
