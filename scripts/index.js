@@ -45,13 +45,8 @@ const formPlaceElement = document.querySelector('.popup__form_place')
 
 const newPlaceElement = document.querySelector('.elements')
 
-const buttonTrash = document.querySelector('.place__delete-button')
-
-const LikeButton = document.querySelector('.place__like-button')
-
 const newPlaceName = document.querySelector('.popup__input_place_name')
 const newPlaceLink = document.querySelector('.popup__input_place_link')
-
 
 const zoomPopup = document.querySelector('.popup_zoom')
 const zoomBigPhoto = document.querySelector('.popup__zoom-photo')
