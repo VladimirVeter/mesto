@@ -77,12 +77,10 @@ function addNewPlaceCard(item) {
 
    ElementPhoto.addEventListener('click', function (evt) {
       imgZoom(item);
-      console.log(item);                  // кликаю на картинку и вызываю консоль с item этой картинки
    });
 
    function imgZoom(item) {
       zoomPopup.classList.add('popup_is-open');  // открыли попап Zoom
-      console.log(zoomPopup.classList)           // проверяю присвоение класса popup_is-open
       zoomPhotoName.textContent = item.name;
       zoomBigPhoto.src = item.link;
       
@@ -143,14 +141,7 @@ function popupPlaceClose() {                                                // �
 }
 closePopupButtonPlace.addEventListener('click', popupPlaceClose)
 
- 
 function popupZoomClose() {                                                // закрыли попап Zoom
    zoomPopup.classList.remove('popup_is-open');
 }
 closeZoomPopupButton.addEventListener('click', popupZoomClose)
-
-
-
-   
-
-
