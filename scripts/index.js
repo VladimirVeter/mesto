@@ -27,7 +27,7 @@ const initialCards = [
 ]; 
 
 const editButton = document.querySelector('.profile__edit-button')
-const popupUser = document.querySelector('.popup')
+const popupUser = document.querySelector('#popup-profile')
 const closePopupButton = document.querySelector('.popup__close')
 
 const popupPlace = document.querySelector('.popup_place')
