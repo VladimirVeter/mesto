@@ -53,13 +53,19 @@ const zoomBigPhoto = document.querySelector('.popup__zoom-photo')
 const zoomPhotoName = document.querySelector('.popup__name')
 const closeZoomPopupButton = document.querySelector('.popup__close_zoom')
 
+
+
+
+
+
 function addNewPlaceCard(item) {
    const placeTemplate = document.querySelector('#place__card').content;
    const placeElement = placeTemplate.querySelector('.place').cloneNode(true);
-   const ElementPhoto = placeElement.querySelector('.place__photo');
+   const elementPhoto = placeElement.querySelector('.place__photo');
 
    placeElement.querySelector('.place__name').textContent = item.name;
    placeElement.querySelector('.place__photo').src = item.link;
+   placeElement.querySelector('.place__photo').alt = item.alt;
 
    placeElement.querySelector('.place__like-button').addEventListener('click', function (evt) {
       evt.target.classList.toggle('place__like-button-active');
@@ -70,7 +76,7 @@ function addNewPlaceCard(item) {
       placeElement.remove();
    });
 
-   ElementPhoto.addEventListener('click', function (evt) {
+   elementPhoto.addEventListener('click', function (evt) {
       imgZoom(item);
    });
 
@@ -78,7 +84,7 @@ function addNewPlaceCard(item) {
       zoomPopup.classList.add('popup_is-open');  // открыли попап Zoom
       zoomPhotoName.textContent = item.name;
       zoomBigPhoto.src = item.link;
-      
+      zoomBigPhoto.alt = item.alt;
    };
    
    newPlaceElement.prepend(placeElement);
